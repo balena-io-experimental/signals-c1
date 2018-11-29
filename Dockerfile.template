@@ -1,0 +1,7 @@
+FROM balenalib/%%RESIN_MACHINE_NAME%%-debian:stretch
+
+WORKDIR /opt/app
+
+COPY run.sh ./
+
+CMD ["./run.sh"]
